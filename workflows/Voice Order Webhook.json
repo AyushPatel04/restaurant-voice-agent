@@ -1,0 +1,55 @@
+{
+  "name": "Voice Order Webhook",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "restaurant-order",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "d5f9feaa-91af-4285-a9b0-0eb71fa9a077",
+      "name": "Webhook",
+      "webhookId": "8d129fcb-fc7f-4354-8970-a2344ccfbac4"
+    }
+  ],
+  "pinData": {
+    "Webhook": [
+      {
+        "json": {
+          "headers": {
+            "host": "localhost:5678",
+            "user-agent": "curl/8.7.1",
+            "accept": "*/*",
+            "content-type": "application/json",
+            "content-length": "74"
+          },
+          "params": {},
+          "query": {},
+          "body": {
+            "order": "cheeseburger, no onions, fries, coke",
+            "phone": "+11234567890"
+          },
+          "webhookUrl": "http://localhost:5678/webhook-test/restaurant-order",
+          "executionMode": "test"
+        }
+      }
+    ]
+  },
+  "connections": {},
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "92521ac8-2412-49a9-9186-6a23952806bc",
+  "meta": {
+    "instanceId": "5be1bd7a0e67ce494302dfc086656d0eb3d131a5bc6db0091d8f84f1f37fefa6"
+  },
+  "id": "uVAaiCoX7tlOzUeN",
+  "tags": []
+}
