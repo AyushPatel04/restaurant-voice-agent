@@ -1,0 +1,4 @@
+FROM n8nio/n8n
+
+ENV GENERIC_TIMEZONE="America/Chicago"
+ENV N8N_HOST="0.0.0.0"
